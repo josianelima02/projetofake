@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-    background: rgba(236, 231, 231, 0.63);
+    background: rgba(251, 231, 231, 0.63);
     width: 100vw;
     height: 100vh;
     font-size: 62.5%;
@@ -22,8 +22,10 @@ li{
 
 /*NAVEGADOR*/
 #menu li > a:hover {
-    background: rgba(206, 219, 13, 0.473);
+    background: rgb(105, 2, 54);
+    color: #f0e115;
   }
+
 
   #menu a {
     display: block;
@@ -48,7 +50,8 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background:#ffd146;
+    background: rgb(251,201,40);
+    background: linear-gradient(90deg, rgba(251,201,40,1) 6%, rgba(255,63,88,1) 46%, rgba(64,142,253,1) 100%);
   }
 
   #menu {
@@ -58,7 +61,7 @@ li{
   }
 
 #menu li a {
-  color:  rgba(190, 87, 231, 0.678);
+  color:  rgba(104, 1, 104, 0.678);
 }
   #btn-mobile {
     display: none;
@@ -138,11 +141,13 @@ li{
   /*Botao de pesquisa*/
 .btn-pes{
   border: .1rem solid rgb(142, 18, 199);
+  background: #77297e;
 }
 
 .btn-pes:hover{
   opacity: .8;
 }
 
-.conteudo-principal{
+.image{
+  height: 29rem;
 }
