@@ -14,10 +14,8 @@
     </head>
     <body>
         <header id="header">
-          <a  id="logo" class="navbar-brand " href="#">
-            <strong>BookStan</strong>
-        </a>
-            <nav id="nav">
+            <h3 id="logo">Bookstan</h3>
+            <nav id="nav" class="row justify-content-md-center">
               <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <span id="hamburger"></span>
               </button>
@@ -34,93 +32,64 @@
                   </div>
                 </li>
                 <li><a href="./sobre.html">Sobre</a></li>
-                 
+                <li><a href="./contato.html">Contato</a></li> 
               </ul>
             
             </nav>  
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-              <button class="btn my-2 my-sm-0 btn-pes" type="submit">Pesquisar</button>
+              <button class="btn my-2 my-sm-0 btn-pes col" type="submit">Pesquisar</button>
             </form>
           </header>
           <!--Fim do nav-->
-          
-            <!--CARROSSEL-->
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="./img/211011_TV05_prepare_a_pipoca.png" alt="Primeiro Slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./img/211011_TV03_campeoes_de_venda.png" alt="Segundo Slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./img/211011_TV04_Box_e_colecoes.png" alt="Terceiro Slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-              </a>
-            </div>
-            <br>
-            <!--FIM CARROSSEL--> 
 
-            <!--Inicio da Main-->
-            <main class="conteudo-principal container">
+          <main class="conteudo-principal">
             <div class="titulo-livros">
-              <h2>Destaques da semana</h2>
+              <h2>Suspense</h2>
            </div>
-            <div class="livros d-flex p-5 bd-highlight row">
-              <div class="card mr-md-3 col-sm" style="width: 20rem; "> 
-                <img class="card-img-top image" src="./img/destaque/guerracivil.svg" alt="Guerra Civil">
-                <br>
+            <div class="livros d-flex p-5 bd-highlight ">
+              <div class="card mr-md-3" style="width: 20rem; ">
+                <img class="card-img-top image" src="./img/suspense/agarotadolago 1.svg" alt="A garota do lago">
                 <div class="card-body">
-                  <h5 class="card-title">Guerra Civil</h5>
-                  <p class="card-text">Autor: Mark Millar  </p> 
-                  <p class="card-text">R$ 29,99 </p> 
-                </div>
-                <a href="#" class="btn btn-warning">Comprar</a> 
-              </div>
-              <div class="card mr-md-3 col" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/destaque/Aristoteles 1.jpg" alt="Aristóteles e Dante descobrem o segredo do Universo: 1">
-                <br>
-                <div class="card-body">
-                  <h5 class="card-title">Aristóteles e Dante Vol 1 </h5>
-                  <p class="card-text">Autor: Benjamin Alire Sáenz </p>
-                  <p class="card-text">R$ 19,99 </p> 
+                  <h5 class="card-title">A garota do lago</h5>
+                  <p class="card-text">Autor: Donlea Charlie</p>
+                  <p class="card-text">R$ 39,90 </p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
-              <div class="card mr-md-3 col" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/destaque/minadapassagem.svg" alt="Aventura na mina da Passagem"> 
-                <br> 
+              <div class="card mr-md-3" style="width: 20rem;">
+                <img class="card-img-top image" src="./img/suspense/lupin2 1.svg" alt="Lupin">
                 <div class="card-body">
-                  <h5 class="card-title">Aventura na mina da Passagem</h5> 
-                  <p class="card-text">Autor: Joseph Conrad </p>
-                  <p class="card-text">R$ 21,36 </p> 
+                  <h5 class="card-title">Lupin</h5>
+                  <p class="card-text">Autor: Leblanc Maurice</p>
+                  <p class="card-text">R$ 37,90 </p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
-              <div class="card mr-md-3 col" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/destaque/opoderdaaçao 1.svg" alt="O poder da Ação">
+              <div class="card mr-md-3" style="width: 20rem;">
+                <img class="card-img-top image" src="./img/suspense/afogueira2 1.svg" alt="A fogueira">
                 <div class="card-body">
-                  <h5 class="card-title">O poder da Ação</h5>
-                  <p class="card-text">Autor: Paulo Vieira </p>
-                  <p class="card-text">R$ 14,00 </p>
+                  <h5 class="card-title">A fogueira</h5>
+                  <p class="card-text">Autor: Krysten Ritter</p>
+                  <p class="card-text">R$ 30,00 </p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
-              <div class="card mr-md-3 col" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/destaque/osenhordocaos 1.svg" alt="O Senhor do Caos-Série A Roda do Tempo - Vol. 6">
+              <div class="card mr-md-3" style="width: 20rem;">
+                <img class="card-img-top image" src="./img/suspense/agarotadesaparecida2 1.svg" alt="A garota desaparecida ">
                 <div class="card-body">
-                  <h5 class="card-title">O Senhor do Caos-Série A Roda do Tempo - Vol. 6</h5>
-                  <p class="card-text">Autor: Robert Jordan </p>
-                  <p class="card-text">R$ 74,32 </p>
+                  <h5 class="card-title">A garota desaparecida </h5>
+                  <p class="card-text">Autor: Tsugumi Ohba</p>
+                  <p class="card-text">R$ 20,00 </p>
+                </div>
+                <a href="#" class="btn btn-warning">Comprar</a>
+              </div>
+              <div class="card mr-md-3" style="width: 20rem;">
+                <img class="card-img-top image" src="./img/suspense/ohomemsussuro2 1.svg" alt="O homem sussuro">
+                <div class="card-body">
+                  <h5 class="card-title">O homem sussuro</h5>
+                  <p class="card-text">Autor: Alex North</p>
+                  <p class="card-text">R$ 39,00</p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
@@ -131,47 +100,47 @@
             </div>
             <div class="livros d-flex p-5 bd-highlight ">
               <div class="card mr-md-3" style="width: 20rem; ">
-                <img class="card-img-top image" src="./img/indicação/eassimqueacaba.svg" alt="É Assim que Acaba">
+                <img class="card-img-top image" src="./img/suspense/marionete2 1.svg" alt="Marionete">
                 <div class="card-body">
-                  <h5 class="card-title">É Assim que Acaba</h5>
-                  <p class="card-text">Autor: Collen Hoover </p>
-                  <p class="card-text">R$ 34,90 </p>
+                  <h5 class="card-title">Marionete</h5>
+                  <p class="card-text">Autor:Daniel Cole </p> 
+                  <p class="card-text">R$ 25,00 </p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
               <div class="card mr-md-3" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/indicação/obrasrevoluncionarios 1.svg" alt="Obras Revolucionárias">
+                <img class="card-img-top image" src="./img/suspense/boneco-de-neve 1.svg" alt="Boneco de neve">
                 <div class="card-body">
-                  <h5 class="card-title">Obras Revolucionárias</h5>
-                  <p class="card-text"> Autor: Gorge Orwell </p>
-                  <p class="card-text">R$ 32,37 </p>
+                  <h5 class="card-title">Boneco de neve </h5>
+                  <p class="card-text">Autor: Hajime Isayama</p>
+                  <p class="card-text">R$ 39,00 </p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
               <div class="card mr-md-3" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/indicação/outsider 1 (2).svg" alt="Outsider">
+                <img class="card-img-top image" src="./img/suspense/o-homem-inocente 1.svg" alt="O homem inocente">
                 <div class="card-body">
-                  <h5 class="card-title">Outsider</h5>
-                  <p class="card-text">Autor: Stephen King </p>
-                  <p class="card-text">R$ 33,90 </p>
+                  <h5 class="card-title">O homem inocente</h5>
+                  <p class="card-text">Autor:Jo Nesbo</p>
+                  <p class="card-text">R$ 40,00 </p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
               <div class="card mr-md-3" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/indicação/talvezvocedevaconversar-removebg-preview 1.svg" alt="Talvez você deva conversar com alguém">
+                <img class="card-img-top image" src="./img/suspense/O-Lado-Sombrio-do-Sítio-1 1.svg" alt="O lado sombrio do sítio">
                 <div class="card-body">
-                  <h5 class="card-title">Talvez você deva conversar com alguém</h5>
-                  <p class="card-text">Autor: Lori Gottlieb</p>
-                  <p class="card-text">R$ 28,69 </p> 
+                  <h5 class="card-title">O lado sombrio do sitio</h5>
+                  <p class="card-text">Autor: André Vianco</p>
+                  <p class="card-text">R$ 45,00 </p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
               <div class="card mr-md-3" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/indicação/tortoarado 1.svg" alt="Torto arado">
+                <img class="card-img-top image" src="./img/suspense/o-iluminado 1.svg" alt="O iluminado">
                 <div class="card-body">
-                  <h5 class="card-title">Torto arado</h5>
-                  <p class="card-text">Autor: Itamar Vieira Junior</p>
-                  <p class="card-text">R$ 35,60 </p>
+                  <h5 class="card-title"> O iluminado </h5>
+                  <p class="card-text"> Autor:Stephen King</p>
+                  <p class="card-text">R$ 35,90 </p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
@@ -182,53 +151,58 @@
            </div>
             <div class="livros d-flex p-5 bd-highlight ">
               <div class="card mr-md-3" style="width: 20rem; ">
-                <img class="card-img-top image" src="./img/mais populares/agarotadolago 1.svg" alt="A garota do lago">
+                <img class="card-img-top image" src="./img/suspense/na-boca-do-leao 1.svg" alt="Na boca do leão">
                 <div class="card-body">
-                  <h5 class="card-title">A garota do lago</h5>
-                  <p class="card-text">Autor: Charlie Donlea </p> 
-                  <p class="card-text">R$ 13,54 </p>
+                  <h5 class="card-title">Na boca do leão </h5>
+                  <p class="card-text">Autor: CLAMP </p>
+                  <p class="card-text">R$ 23,90 </p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
               <div class="card mr-md-3" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/mais populares/given5 1.svg" alt="Given - Vol. 05">
+                <img class="card-img-top image" src="./img/suspense/uma-mulher-escuridao 1.svg" alt="Uma mulher na escuridão">
                 <div class="card-body">
-                  <h5 class="card-title">Given - Vol. 05</h5>
-                  <p class="card-text">Autor: Natsuki Kizu </p> 
-                  <p class="card-text">R$ 25,42 </p>
-                </div>
-                <a href="#" class="btn btn-warning">Comprar</a>
-              </div> 
-              <div class="card mr-md-3" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/mais populares/montecristo 1.svg" alt="Dumas - O Conde de Monte Cristo">
-                <div class="card-body">
-                  <h5 class="card-title">Dumas - O Conde de Monte Cristo</h5>
-                  <p class="card-text">Autor: Alexandre Dumas  </p> 
-                  <p class="card-text">R$ 96,85 </p>
-                </div>
-                <a href="#" class="btn btn-warning">Comprar</a>   
-              </div>
-              <div class="card mr-md-3" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/mais populares/estilhaçame 1.svg" alt="Estilhaça-me vol 1">
-                <div class="card-body">
-                  <h5 class="card-title">Estilhaça-me vol 1</h5>
-                  <p class="card-text">Autor: Alexandre Dumas</p> 
-                  <p class="card-text">R$ 20,99 </p>
+                  <h5 class="card-title">Uma mulher na escuridão</h5>
+                  <p class="card-text">Autor:Charlie Donlea </p>
+                  <p class="card-text">R$ 24,90 </p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
               <div class="card mr-md-3" style="width: 20rem;">
-                <img class="card-img-top image" src="./img/mais populares/vingadores 1.svg" alt="Vingadores todos querem dominar o mundo">
+                <img class="card-img-top image" src="./img/suspense/nao-confiem-em-ninguem 1.svg" alt="Não confie em ninguém">
                 <div class="card-body">
-                  <h5 class="card-title">Vingadores todos querem dominar o mundo</h5> 
-                  <p class="card-text">Autor: Alex Irvine</p> 
-                  <p class="card-text">R$ 27,97 </p>
+                  <h5 class="card-title">Não confie em ninguém</h5>
+                  <p class="card-text">Autor:Charlie Donlea </p>
+                  <p class="card-text">R$ 25,90 </p>
+                </div>
+                <a href="#" class="btn btn-warning">Comprar</a>
+              </div>
+              <div class="card mr-md-3" style="width: 20rem;">
+                <img class="card-img-top image" src="./img/suspense/a-paciente-silenciosa 1.svg" alt="A paciente silenciosa">
+                <div class="card-body">
+                  <h5 class="card-title"> A paciente silenciosa</h5>
+                  <p class="card-text">Autor:Alex Michaelides</p>
+                  <p class="card-text">R$ 39,00 </p>
+                </div>
+                <a href="#" class="btn btn-warning">Comprar</a>
+              </div>
+              <div class="card mr-md-3" style="width: 20rem;">
+                <img class="card-img-top image" src="./img/suspense/caixa-de-passaros 1.svg" alt="Caixa de pássaros">
+                <div class="card-body">
+                  <h5 class="card-title">Caixa de pássaros</h5>
+                  <p class="card-text">Autor:Josh Malerman</p>
+                  <p class="card-text"> R$ 29,90</p>
                 </div>
                 <a href="#" class="btn btn-warning">Comprar</a>
               </div>
             </div>
           </main>
-          
+          <div class="card mb-3">
+            <img class="card-img-top" src="./img/anuncios//BF-premiados-banner-desktop-cupom.png" alt="Imagem de capa do card">
+          </div>
+        
+
+
           <div class="footer">
             <footer>
                 <div class="container">
@@ -256,10 +230,8 @@
                     <div class="col item social">
                       <a href="#"><img src="./img/facebook.svg" alt="Facebook"></a>
                       <a href="#"><img src="./img/instagram.svg" alt="Instagram"></a>
-                      <a href="#"><img src="./img/whatsapp (1).svg" alt="Whatsapp"></a>
+                      <a href="#"><img src="./img/whatsapp (1).svg" alt="Whatsapp"></a> 
                       <a href="#"><img src="./img/email.svg" alt="Email"></a>
-                     
-                        
                    </div>
                    </div> 
 
@@ -267,9 +239,7 @@
                 </div>
             </footer>
         </div>
-
-
-         
+            
         <!--BOOTSTRAP-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

@@ -74,7 +74,8 @@ li{
       width: 100%;
       top: 70px;
       right: 0px;
-      background: #d38ada;
+      background: rgb(251,201,40);
+      background: linear-gradient(90deg, rgba(251,201,40,1) 6%, rgba(255,63,88,1) 46%, rgba(64,142,253,1) 100%);
       transition: 0.6s;
       z-index: 1000;
       height: 0px;
@@ -141,7 +142,7 @@ li{
   /*Botao de pesquisa*/
 .btn-pes{
   border: .1rem solid rgb(142, 18, 199);
-  background: #77297e;
+  background: #cc88d3;
 }
 
 .btn-pes:hover{
@@ -150,4 +151,8 @@ li{
 
 .image{
   height: 29rem;
-}
+} 
+
+.card .image{
+  margin-bottom: 1rem;
+} 
