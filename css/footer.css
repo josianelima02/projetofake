@@ -1,0 +1,112 @@
+.footer{
+    padding:4rem 0;
+    color:rgb(68, 1, 53);
+    background: rgba(64, 143, 253, 0.692);
+    background: linear-gradient(150deg, rgba(64, 143, 253, 0.692) 6%, rgba(255,63,88,1) 46%, rgb(251,201,40) 100%);
+  }
+
+  .footer p{
+    font-family: 700;
+    color: rgba(8, 8, 8, 0.837);
+  }
+
+  @media (max-width:767px) {
+    .footer .item:not(.social) {
+      text-align:center; 
+      padding-bottom:2.0rem;
+    }
+  } 
+
+
+  @media (max-width:767px) {
+    .footer .item.text {
+      margin-bottom:0;
+    }
+  } 
+  .footer .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer .item.social {
+      text-align:center;
+      margin-top:2.0rem; 
+    }
+  }
+
+  .footer h3{
+    text-align: start;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color:rgb(251, 247, 252);
+    margin-bottom: 2rem;
+  }
+  
+
+  .footer .pagamento >  img + img{
+    margin-left: 1rem;
+  }
+  
+  .footer .pagamento >  img{
+    width: 4rem;
+    padding: .255rem;
+  }
+
+  /* LOGIN E CADASTRO
+
+  .footer .login .avatar{
+    background: transparent;
+    display: flex;
+  }
+
+  .footer .login .avatar > img{
+    width: 10%;
+    margin: 2rem .25rem;
+  }
+
+  .footer .login h3 {
+    font-size: 2rem;
+    margin: 2.2rem .25rem;
+  }
+
+  .footer .login h3:hover {
+    color: rgb(251, 255, 4) ;
+  } */
+
+
+  
+
+  .footer .item.social > a img:hover{
+    box-shadow: rgb(251, 255, 4) 0px 3px 8px;  
+  }
+
+  .footer .item.social > a img{
+    font-size:1rem;
+    width: 4rem;
+    height:3.6rem; 
+    display:inline-block;
+    text-align:center;
+    border-radius:10%;
+    box-shadow: rgb(233, 113, 233) 0px 3px 8px;  
+    margin:0 .9rem;
+  }
+  
+  .footer .copyright {
+    text-align:center;
+    padding-top:2rem;
+    font-size:1.5rem;
+    margin-bottom:0;
+    font-weight: 600;
+  }
+  
+
+
+/*RESPONSIVO*/
+  @media(max-width: 1200px){
+    .footer h3{
+      font-size: 1.8rem;
+    }
+
+  }
+
+

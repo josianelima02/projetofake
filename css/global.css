@@ -1,0 +1,412 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    background: rgba(251, 231, 231, 0.63);
+    height: 100vh;
+    font-size: 62.5%;
+}
+
+html{
+    scroll-behavior: smooth; /* Rolagem de leve na página */
+}
+a{
+  text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*NAVEGADOR*/
+#menu li > a:hover {
+  /* background: #d477df; */
+  color: rgb(251, 255, 4);
+
+  -moz-transition: color 220ms ease-in;
+    /* WebKit */
+    -webkit-transition: color 220ms ease-in;
+    /* Opera */
+    -o-transition: color 220ms ease-in;
+    /* Standard */
+    transition: color 220ms ease-in;
+}
+
+
+#menu a {
+  display: block;
+  margin-top: .5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#menu {
+  box-sizing: border-box;
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+#menu li a {
+  color: rgba(8, 8, 8, 0.837);
+}
+
+
+
+/*MENU CATEGORIA*/
+#menu .nav-item .dropdown-menu{
+  margin: 0 auto;
+  padding: 5rem;
+  background: linear-gradient(150deg, rgba(64, 143, 253, 0.966) 6%, rgba(255, 63, 89, 0.966) 46%, rgb(251,201,40) 100%);
+}
+
+#menu .nav-item .dropdown-menu > a{
+  margin:  0 auto;
+  padding: 2rem ;
+  border-bottom: 2px solid rgb(142, 18, 199);
+}
+
+#menu .nav-item .dropdown-menu > a:hover{
+  background: transparent;
+  /* background: #d477df; */
+  color: rgb(251, 255, 4);
+  border-bottom: 2px solid #d477df;
+
+  -moz-transition: color 220ms ease-in;
+  /* WebKit */
+  -webkit-transition: color 220ms ease-in;
+  /* Opera */
+  -o-transition: color 220ms ease-in;
+  /* Standard */
+  transition: color 220ms ease-in;
+}
+  
+/*Botao de pesquisa*/
+.btn-pes{
+  border: .1rem solid rgb(142, 18, 199);
+  background: #d477df;
+  font-weight: 600;
+  height: 2.4rem;
+  margin: 0 .25rem;
+}
+
+.btn-pes:hover{
+  opacity: .8;
+}
+
+
+/*LOGO*/
+#logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(8, 8, 8, 0.837);
+  text-transform: uppercase;
+  margin: 0 0 0 5rem;
+}
+
+
+/*HEADER*/
+  
+#header {
+  box-sizing: border-box;
+  height:5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(64, 143, 253, 0.692) ;
+  background: linear-gradient(150deg, rgba(64, 143, 253, 0.692) 6%, rgba(255,63,88,1) 46%, rgb(251,201,40) 100%);;
+}
+
+
+#header{
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 0 ;
+}
+
+/*LOGIN E CADASTRO*/
+.login{
+  width: 8rem;
+  height: 5rem;
+  margin: 0  -5rem;
+}
+
+ .login .avatar{
+  background: transparent;
+  height: 3rem;
+  margin : 0 auto;
+}
+
+  .login  .avatar img{
+    width: 35%;
+    margin: 1rem auto;
+  }
+
+
+/*FORMULARIO*/
+.login .modal-body {
+  background: linear-gradient(35deg, rgba(64, 143, 253, 0.692) 6%, rgba(255,63,88,1) 46%, rgb(251,201,40) 100%);
+}
+
+.login .modal-body  .form-group{
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.login form .entrar {
+  border: .1rem solid rgb(142, 18, 199);
+  background: #d477df;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.login form .entrar:hover {
+  opacity: .8;
+}
+
+
+/*X DO MENU RESPONSIVO*/
+
+#btn-mobile {
+  display: none;
+}
+
+
+/* LIVROS*/
+.card-body{
+  height: 14rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* CATEGORIAS DOS LIVROS*/
+.titulo-livros{
+  font-size: 600;
+  color: black;
+  margin: 1rem 1rem;
+}
+
+
+
+/*MENU RESPONSIVO*/
+@media (max-width: 900px) {
+  #header{
+    justify-content: space-around;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: rgba(64, 143, 253, 0.692) ;
+    background: linear-gradient(150deg, rgba(64, 143, 253, 0.911) 6%, rgba(255,63,88,1) 46%, rgb(251,201,40) 100%);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a{
+    padding: 2rem ;
+    margin: 0 1rem;
+    border-bottom: 2px solid  rgb(142, 18, 199);
+  }
+  
+  #menu a:hover{
+    color: rgb(142, 18, 199);
+    border-bottom: 2px solid #d477df;
+
+    -moz-transition: color 220ms ease-in;
+    /* WebKit */
+    -webkit-transition: color 220ms ease-in;
+    /* Opera */
+    -o-transition: color 220ms ease-in;
+    /* Standard */
+    transition: color 220ms ease-in;
+  }
+  
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  /*botao de pesquisa*/
+  .form-inline{
+    width: 80%;
+  }
+
+  /*LOGIN*/
+  #login{
+    width: 25%;
+  }
+  
+}
+
+
+
+
+/*CARROSEUL DOS LIVROS*/
+
+.swiper-slide {
+  text-align: center;
+
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 28rem;
+  width: 21rem;
+  margin:  0 auto;
+}
+
+
+/*RESPONSIVO*/
+
+@media(max-width: 1200px){
+  body{
+      overflow-x: hidden;       
+}
+
+#logo{
+  margin: 0 0;
+}
+
+.conteudo-principal h1, h2, h3, h4, h5, h6{
+  font-size: 1.2rem;
+}
+
+.livros{
+  width: 922px;
+  padding: 5rem 10rem;
+}
+
+.swiper-wrapper .card img{
+  width: 13rem;
+  height: 18rem;  
+}
+
+.livros .swiper-wrapper .card{
+  height: 32rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.card-body {
+  padding: .8rem 0;
+  text-align: start;
+  font-size: 1rem;
+}
+
+.btn-pes{
+  margin: 0 0;
+}
+
+.login{
+  width: 10%;
+  margin: 0 1rem 0 0;
+}
+
+}
+
+
+@media(max-width: 700px){
+  body{
+      overflow-x: hidden;     
+}
+
+.livros{
+  width: 620px;
+}
+
+.swiper-wrapper .card img{
+  width: 9rem;
+  height: 9.5rem;  
+}
+
+.livros .swiper-wrapper .card{
+  height: 28rem;
+  padding: 0 .5rem;
+  margin: 0 auto;
+}
+
+.card-body {
+  padding: .8rem 0;
+  text-align: start;
+  font-size: 1rem;
+}
+
+.pesquisa{
+  display: none;
+}
+
+.login{
+  width: 5%;
+}
+
+}
+
+
+

@@ -1,0 +1,11 @@
+.section{
+    padding: 2rem 2rem;
+    text-align: start;
+}
+
+.section p{
+    font-size: 1rem;
+    color: rgba(8, 8, 8, 0.837);
+    font-weight: 400;
+}
+
