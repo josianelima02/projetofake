@@ -11,11 +11,11 @@
             const email = document.getElementById("exampleInputEmail1")
 
             alert("Bem-vinda ao BOOKSTAN")
-            return false;
+            return ;
         } else {
 
             alert("Por favor, preencha os campos!")
-            return true;
+            return ;
         }
     };
 
@@ -32,8 +32,10 @@
                 email = document.getElementById("email")
     
                 alert("Prontinho!! Você receberá um e-mail com os próximos passos!")
+                return ;
             } else {
     
                 alert("Por favor, preencha os campos!")
+                return ;
             }
         };
