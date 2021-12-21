@@ -22,8 +22,8 @@
 
         //formulario
         document.querySelector("#botaoCadastrar").addEventListener("click", validarFormulario)
-        function validarFormulario() {
-    
+        function validarFormulario(event) {
+            event.preventDefault();
             if (
                 document.getElementById("nome").value != "" &&
                 document.getElementById("email").value != ""
