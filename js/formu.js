@@ -2,7 +2,7 @@
     //formulario
     document.querySelector("#botaoEnviar").addEventListener("click", validarLogin)
     function validarLogin() {
-
+        event.preventDefault();
         if (
             document.getElementById("exampleInputPassword1").value != "" &&
             document.getElementById("exampleInputEmail1").value != ""
