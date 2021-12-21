@@ -1,7 +1,7 @@
 
     //formulario
     document.querySelector("#botaoEnviar").addEventListener("click", validarLogin)
-    function validarLogin() {
+    function validarLogin(event) {
         event.preventDefault();
         if (
             document.getElementById("exampleInputPassword1").value != "" &&
